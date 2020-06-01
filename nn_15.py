@@ -32,7 +32,7 @@ def create_data_sets(sets=1000, iterations = 20):
 def Model(double=False):
     # Implements a TensorFlow Sequential model with a number of Dense layers
 
-    # I was experimenting with one and two hidden layers and two hidden layers gave a better resalt naturally
+    # I was experimenting with one and two hidden layers and two hidden layers have a better result natural
     model = keras.Sequential()
     model.add(keras.layers.Flatten(input_shape=(16, 1)))
     model.add(keras.layers.Dense(512, activation='sigmoid'))
